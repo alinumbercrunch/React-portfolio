@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -8,9 +8,9 @@ module.exports = {
         titleFont: ["Montserrat, sans-serif"],
       },
       colors: {
-        bodycolor: "#191919",
-        textcolor: "rgba(255, 255, 255, 0.85)",
-        designColor: "#edff20",
+        bodyColor: "#191919",
+        textColor: "rgba(255, 255, 255, 0.85)",
+        designColor: "#800080",
         titleRoundBg:
           "linear-gradient(135deg, rgba(120, 204, 109, .15) 0%, rgba(120, 204, 109, 1%))",
       },
