@@ -6,16 +6,16 @@ import { FiMail } from "react-icons/fi";
 
 const Left = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Full Stack Developer"],
+    words: ["Web Developer", "Full Stack Developer", "Consultant"],
     loop: true,
     typeSpeed: 30,
     deLeteSpeed: 20,
     deLaySpeed: 2000,
   });
   return (
-    <div>
-      <div className="w-5/12 h-full bg-bodyColor rounded-2xl">
-        <div className="w-full h-3/5">
+    <div className="w-5/12 h-full bg-bodyColor rounded-2xl shadow-testShadow z-10">
+      <div className="w-full h-3/5">
+        <div>
           <img
             className="w-full h-full object-cover rounded-2xl"
             src={bannerImg}
