@@ -56,7 +56,9 @@ const Home = () => {
         {<Left />}
         {/* Right part start */}
         <div className="w-8/12 h-[95%] bg-bodyColor">
-          <About />
+          <div className="w-full h-[96%] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]">
+            <About />
+          </div>
         </div>
       </div>
     </div>
