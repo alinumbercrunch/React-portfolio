@@ -1,12 +1,17 @@
 import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { bannerImg } from "../../src/assets/index";
-import { BsCloudLightningFill } from "react-icons/bs";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { AiFillTwitterCircle } from "react-icons/ai";
-import { SiYoutubemusic } from "react-icons/si";
-import { FiMail, FiSend } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 
 const Left = () => {
+  const [text] = useTypewriter({
+    words: ["Web Developer", "Full Stack Developer"],
+    loop: true,
+    typeSpeed: 30,
+    deLeteSpeed: 20,
+    deLaySpeed: 2000,
+  });
   return (
     <div>
       <div className="w-5/12 h-full bg-bodyColor rounded-2xl">
@@ -23,7 +28,8 @@ const Left = () => {
                 Ali Haddi
               </h1>
               <p className="text-base text-designColor tracking-wide font-semibold">
-                FullStack engineer
+                {text}
+                <Cursor cursorBlinking="false" cursorStyle="|" />
               </p>
               <div className="flex justify-center gap-2 mt-2">
                 <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
@@ -35,12 +41,8 @@ const Left = () => {
                 <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
                   <FiMail />
                 </span>
-                <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-                  <FiSend />
-                </span>
               </div>
             </div>
-            <div></div>
           </div>
         </div>
       </div>

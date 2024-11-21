@@ -2,3 +2,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  .borderTop {
+    @apply border-t-[1px] border-t-zinc-800;
+  }
+
+  .borderBottom {
+    @apply border-b-[1px] border-b-zinc-800;
+  }
+
+  .borderRight {
+    @apply border-r-[1px] border-r-zinc-800;
+  }
+
+  .borderLeft {
+    @apply border-L-[1px] border-L-zinc-800;
+  }
+
+  .borderAll {
+    @apply border-[1px] border-zinc-800;
+  }
+  .aboutRightLi {
+    @apply font-semibold text-zinc-400 text-base flex justify-between items-center border-b-[1px] border-gray-800 py-2;
+  }
+  .aboutRightLiSpan {
+    @apply font-semibold  bg-designColor text-gray-300 uppercase px-4 py-[1px] rounded-md;
+  }
+}
