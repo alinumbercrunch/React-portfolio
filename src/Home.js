@@ -6,6 +6,7 @@ import { MdWork } from "react-icons/md";
 import { SiGooglechat } from "react-icons/si";
 import { GiDesert } from "react-icons/gi";
 import { FaYoutube } from "react-icons/fa";
+import Resume from "./components/Resume/Resume.js";
 
 const Home = () => {
   return (
@@ -63,7 +64,8 @@ const Home = () => {
         {/* Right part start */}
         <div className="w-8/12 h-[95%] bg-bodyColor">
           <div className="w-full h-[96%] overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]">
-            <About />
+            {/* <About /> */}
+            <Resume />
           </div>
         </div>
       </div>
