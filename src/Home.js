@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { SiGooglechat } from "react-icons/si";
 import { GiDesert } from "react-icons/gi";
-import { GiSausage } from "react-icons/gi";
+import { FaYoutube } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -32,21 +32,27 @@ const Home = () => {
             </span>
           </span>
           <span className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
-            <SiGooglechat />
+            <a
+              href="https://www.wantedly.com/users/176929662/post_articles/935377"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiGooglechat />
+            </a>
             <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               Blog
             </span>
           </span>
           <span className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
-            <GiDesert />
+            <a
+              href="https://www.youtube.com/watch?v=I3qwcxLIzvM"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube />
+            </a>
             <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
-              About Morocco
-            </span>
-          </span>
-          <span className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group">
-            <GiSausage />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
-              About Germany
+              Coding music
             </span>
           </span>
         </div>
