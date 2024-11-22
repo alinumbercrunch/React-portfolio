@@ -13,7 +13,7 @@ const Left = () => {
     deLaySpeed: 2000,
   });
   return (
-    <div className="w-5/12 h-full bg-bodyColor rounded-2xl shadow-testShadow z-10">
+    <div className="w-5/12 h-full bg-bodyColor rounded-2xl shadow-testShadow">
       <div className="w-full h-3/5">
         <div>
           <img
@@ -33,13 +33,22 @@ const Left = () => {
               </p>
               <div className="flex justify-center gap-2 mt-2">
                 <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-                  <FaGithub />
+                  <a
+                    href="https://github.com/alinumbercrunch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
                 </span>
                 <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-                  <FaLinkedin />
-                </span>
-                <span className="hover:text-designColor duration-300 cursor-pointer text-xl">
-                  <FiMail />
+                  <a
+                    href="https://www.linkedin.com/notifications/?filter=all"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedin />
+                  </a>
                 </span>
               </div>
             </div>
