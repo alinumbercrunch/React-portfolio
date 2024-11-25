@@ -2,6 +2,7 @@ import React from "react";
 import ResumeTitle from "./ResumeTitle";
 import { MdWork } from "react-icons/md";
 import ResumeCard from "./ResumeCard";
+import { GiGraduateCap } from "react-icons/gi";
 
 const Education = () => {
   return (
@@ -10,7 +11,7 @@ const Education = () => {
         <ResumeTitle title="Experience" icon={<MdWork />} />
 
         <ResumeCard
-          badge="May 2024-Present"
+          badge=""
           title="Career Break: Software Engineer Transition"
           subTitle="LeWagon Web Development Bootcamp Tokyo"
           des={`<p>
@@ -20,7 +21,7 @@ const Education = () => {
         />
 
         <ResumeCard
-          badge="April 2022-May 2024"
+          badge="Apr 2022-May 2024"
           title="Global Tech Talent Acquisition Consultant"
           subTitle="Rakuten Inc. Japan (Via Boyd & Moore Executive Search)"
           des={`<p>
@@ -34,7 +35,7 @@ const Education = () => {
         />
 
         <ResumeCard
-          badge="August 2020 – February 2022"
+          badge="Aug 2020 – Feb 2022"
           title="Senior Account Executive"
           subTitle="Spotted Recruit"
           des={`<p>
@@ -45,7 +46,7 @@ const Education = () => {
         />
 
         <ResumeCard
-          badge="November 2018 – July 2020"
+          badge="Nov 2018 – July 2020"
           title="Technical Recruiter"
           subTitle="Robert Walters Japan"
           des={`<p>
@@ -56,7 +57,7 @@ const Education = () => {
         />
 
         <ResumeCard
-          badge="October 2016 – October 2018"
+          badge="Oct 2016 - Oct 2018"
           title="Business Coach"
           subTitle="Berlitz Business Communication Japan"
           des={`<p>
@@ -66,10 +67,28 @@ const Education = () => {
         />
       </div>
       <div className="w-full h-full flex justify-center items-center">
-        <span className="w-[1px] h-full bg-zinc-800 inline-flex">XXX</span>
+        <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
       </div>
 
-      <div className="col-span-4"></div>
+      <div className="col-span-4">
+        <ResumeTitle title="Education" icon={<GiGraduateCap />} />
+        <ResumeCard
+          badge="June 2024 - Sep 2024"
+          title="Full Stack Development Graduate"
+          subTitle="LeWagon Tokyo"
+          des={`<p>
+            <strong>Intensive coding bootcamp, acquiring modern web development technologies.
+          </p>`}
+        />
+        <ResumeCard
+          badge="Oct 2008 - May 2016"
+          title="Bachelor and Master of Science"
+          subTitle="University of Wuppertal"
+          des={`<p>
+            <strong>Statistic/ Econometrics/ Controlling/Auditing.
+          </p>`}
+        />
+      </div>
     </div>
   );
 };
