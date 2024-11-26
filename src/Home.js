@@ -7,6 +7,7 @@ import { SiGooglechat } from "react-icons/si";
 import { PiReadCvLogo } from "react-icons/pi";
 import { FaYoutube } from "react-icons/fa";
 import Resume from "./components/Resume/Resume.js";
+import Projects from "./components/Projects/Project.js";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -140,6 +141,16 @@ const Home = () => {
               >
                 {" "}
                 <Resume />{" "}
+              </motion.div>
+            )}
+            {projects && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                {" "}
+                <Projects />{" "}
               </motion.div>
             )}
           </div>
