@@ -28,4 +28,7 @@
   .aboutRightLiSpan {
     @apply font-semibold  bg-designColor text-gray-300 uppercase px-4 py-[1px] rounded-md;
   }
+  .sideNavLi {
+    @apply text-textColor border-b-[1px] border-b-zinc-500 py-4 text-base hover:text-designColor duration-300;
+  }
 }

@@ -27,8 +27,8 @@ const AboutMe = () => {
               Tokyo
             </li>
             <li className="aboutRightLi">
-              <span className="aboutRightLiSpan">Freelance: </span>
-              Available
+              <span className="aboutRightLiSpan">Available for work: </span>
+              yes
             </li>
           </ul>
         </div>
