@@ -1,6 +1,5 @@
 import React from "react";
 import ResumeTitle from "./ResumeTitle";
-import { SiArtstation } from "react-icons/si";
 import { IoLanguageSharp } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
 

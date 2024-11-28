@@ -2,7 +2,6 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { bannerImg } from "../../src/assets/index";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
 
 const Left = () => {
   const [text] = useTypewriter({
