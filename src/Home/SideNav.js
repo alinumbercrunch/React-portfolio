@@ -3,7 +3,7 @@ import SideNavTitel from "./SideNavTitel";
 
 const SideNav = () => {
   return (
-    <div>
+    <div style={{ paddingLeft: "20px" }}>
       <SideNavTitel title="Menu" />
       <ul>
         <li className="sideNavLi">About Me</li>
