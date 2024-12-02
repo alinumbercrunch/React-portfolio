@@ -22,7 +22,9 @@ A personal portfolio website built using React and deployed on AWS with HTTPS se
 <p align="center">
   <img src="https://img.shields.io/badge/Amazon%20S3-%23FF9900.svg?style=for-the-badge&logo=amazon-s3&logoColor=white" alt="aws-s3" />
   <img src="https://img.shields.io/badge/Amazon%20CloudFront-%23232F3E.svg?style=for-the-badge&logo=amazon-cloudfront&logoColor=white" alt="cloudfront" />
+  <img src="https://img.shields.io/badge/Amazon%20Route%2053-%23232F3E.svg?style=for-the-badge&logo=amazon-route53&logoColor=white" alt="route53" />
 </p>
+
 
 **Version Control**:
 <p align="center">
