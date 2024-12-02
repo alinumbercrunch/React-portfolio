@@ -9,51 +9,52 @@ const Skills = ({ title, icon }) => {
       <div className="col-span-4">
         <ResumeTitle title="Tech Stacks" icon={<FaLaptopCode />} />
         <div className="py-4">
-          <div className="p-4 border border-zinc-800 rounded-lg bg-zinc-900">
+          <div className="p-4 border border-zinc-800 rounded-md bg-zinc-900">
             {" "}
             <p className="text-lg font-semibold text-[#f5f5f5] mb-2">
               Front-End
             </p>{" "}
             <p className="text-sm text-[#999]">
-              HTML, CSS, Vue.js, Bootstrap, TypeScript, JavaScript (ES6)
+              HTML, React.js,Tailwind, CSS, Vue.js, Bootstrap, TypeScript,
+              JavaScript (ES6)
             </p>{" "}
           </div>{" "}
-          <div className="p-4 border border-zinc-800 rounded-lg bg-zinc-900">
+          <div className="p-4 border border-zinc-800 rounded-md bg-zinc-900">
             {" "}
             <p className="text-lg font-semibold text-[#f5f5f5] mb-2">
               Back-End
             </p>{" "}
             <p className="text-sm text-[#999]">Ruby on Rails</p>{" "}
           </div>{" "}
-          <div className="p-4 border border-zinc-800 rounded-lg bg-zinc-900">
+          <div className="p-4 border border-zinc-800 rounded-md bg-zinc-900">
             {" "}
             <p className="text-lg font-semibold text-[#f5f5f5] mb-2">
               Databases
             </p>{" "}
             <p className="text-sm text-[#999]">PostgreSQL</p>{" "}
           </div>{" "}
-          <div className="p-4 border border-zinc-800 rounded-lg bg-zinc-900">
+          <div className="p-4 border border-zinc-800 rounded-md bg-zinc-900">
             {" "}
             <p className="text-lg font-semibold text-[#f5f5f5] mb-2">
               Version Control
             </p>{" "}
             <p className="text-sm text-[#999]">Git, GitHub</p>{" "}
           </div>{" "}
-          <div className="p-4 border border-zinc-800 rounded-lg bg-zinc-900">
+          <div className="p-4 border border-zinc-800 rounded-md bg-zinc-900">
             {" "}
             <p className="text-lg font-semibold text-[#f5f5f5] mb-2">
               Deployment
             </p>{" "}
             <p className="text-sm text-[#999]">Heroku, Render, AWS</p>{" "}
           </div>{" "}
-          <div className="p-4 border border-zinc-800 rounded-lg bg-zinc-900">
+          <div className="p-4 border border-zinc-800 rounded-md bg-zinc-900">
             {" "}
             <p className="text-lg font-semibold text-[#f5f5f5] mb-2">
               Methodologies
             </p>{" "}
             <p className="text-sm text-[#999]">Agile/ Scrum framework</p>{" "}
           </div>{" "}
-          <div className="p-4 border border-zinc-800 rounded-lg bg-zinc-900">
+          <div className="p-4 border border-zinc-800 rounded-md bg-zinc-900">
             {" "}
             <p className="text-lg font-semibold text-[#f5f5f5] mb-2">
               Project Management tools

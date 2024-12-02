@@ -9,10 +9,10 @@ const About = () => {
     <section id="about" className="w-full">
       <Title title="About" subTitle="Me" />
       <AboutMe />
-      <Title title="My" subTitle="Area of Expertise" />
-      <MyServices />
       <Title title="Fun" subTitle="Fact" />
       <FunFact />
+      <Title title="My" subTitle="Area of Expertise" />
+      <MyServices />
     </section>
   );
 };
