@@ -5,13 +5,14 @@
 
 
 ## Overview
-A personal portfolio website built using React and deployed on AWS with HTTPS security.
+A personal portfolio website built using React and deployed on AWS with HTTPS security. Translation in Japanese is provided through i18next.
 
 ## Technologies Used
 
 **Front-end**:
 <p align="center">
   <img src="https://img.shields.io/badge/react-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=white" alt="react" />
+  <img src="https://img.shields.io/badge/i18next-%23E34F26.svg?style=for-the-badge&logo=i18next&logoColor=white" alt="i18next" />
   <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript" />
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="html5" />
   <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="tailwind-css" />
