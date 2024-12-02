@@ -2,6 +2,7 @@ import React from "react";
 import ResumeTitle from "./ResumeTitle";
 import { IoLanguageSharp } from "react-icons/io5";
 import { FaLaptopCode } from "react-icons/fa";
+import { Trans } from "react-i18next";
 
 const Skills = ({ title, icon }) => {
   return (
@@ -67,34 +68,47 @@ const Skills = ({ title, icon }) => {
         <span className="w-[1px] h-full bg-zinc-800 inline-flex "></span>
       </div>
       <div className="col-span-4">
-        <ResumeTitle title="Languages" icon={<IoLanguageSharp />} />
+        <ResumeTitle
+          title={<Trans i18nKey="LanguagesTitle">Languages</Trans>}
+          icon={<IoLanguageSharp />}
+        />
         <div className="py-4">
           <div className="py-3 border-b-[1px] border-zinc-800">
-            <p className="text-base text-textcolor -mb-1.5">French</p>
+            <p className="text-base text-textcolor -mb-1.5">
+              <Trans i18nKey="French">French</Trans>
+            </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
               <span className="w-[100%] h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
           <div className="py-3 border-b-[1px] border-zinc-800">
-            <p className="text-base text-textcolor -mb-1.5">German</p>
+            <p className="text-base text-textcolor -mb-1.5">
+              <Trans i18nKey="German">German</Trans>
+            </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
               <span className="w-[100%] h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
           <div className="py-3 border-b-[1px] border-zinc-800">
-            <p className="text-base text-textcolor -mb-1.5">Arabic</p>
+            <p className="text-base text-textcolor -mb-1.5">
+              <Trans i18nKey="Arabic">Arabic</Trans>
+            </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
               <span className="w-[100%] h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
           <div className="py-3 border-b-[1px] border-zinc-800">
-            <p className="text-base text-textcolor -mb-1.5">Japanese</p>
+            <p className="text-base text-textcolor -mb-1.5">
+              <Trans i18nKey="Japanese">Japanese</Trans>
+            </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
               <span className="w-[75%] h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
           <div className="py-3 border-b-[1px] border-zinc-800">
-            <p className="text-base text-textcolor -mb-1.5">English</p>
+            <p className="text-base text-textcolor -mb-1.5">
+              <Trans i18nKey="English">English</Trans>
+            </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
               <span className="w-[90%] h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
