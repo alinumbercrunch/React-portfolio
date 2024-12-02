@@ -5,11 +5,11 @@ const ResumeCard = ({ badge, title, subTitle, des }) => {
   return (
     <div className="w-full py-6 flex flex-col gap-2.5 border-b-[1px]">
       {badge === "" ? (
-        <h6 className="w-24 text-center text-sm py-[1px] text-designColor font-semibold border-[1px] border-zinc-600 rounded-sm">
+        <h6 className="w-24 text-center text-sm py-[1px] text-designColor font-semibold border-[1px] border-zinc-600 rounded-md">
           May 2024-Present
         </h6>
       ) : (
-        <h6 className="w-24 text-center text-sm py-[1px] text-[#999] border-[1px] border-zinc-600 rounded-sm">
+        <h6 className="w-24 text-center text-sm py-[1px] text-[#999] border-[1px] border-zinc-600 rounded-md">
           {badge}
         </h6>
       )}

@@ -12,11 +12,11 @@ const Left = () => {
     deLaySpeed: 2000,
   });
   return (
-    <div className="w-5/12 h-full bg-bodyColor rounded-2xl shadow-testShadow">
+    <div className="w-5/12 h-full bg-bodyColor rounded-md shadow-testShadow">
       <div className="w-full h-3/5">
         <div>
           <img
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-md"
             src={bannerImg}
             alt="bannerImage"
             loading="priority"

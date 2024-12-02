@@ -6,6 +6,7 @@ import Guided from "../../assets/Guided.jpg";
 import dun from "../../assets/Dun.png";
 import ProjectCard from "./ProjectCard";
 import Title from "../About/Title";
+import ReactP from "../../assets/ReactP.png";
 
 const Project = () => {
   return (
@@ -72,6 +73,17 @@ const Project = () => {
                 Vue
                 Mobile Support`}
               image={dun}
+            />
+          </a>
+          <a
+            href="https://github.com/alinumbercrunch/React-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ProjectCard
+              title="My New React Portfolio"
+              category={`A personal portfolio website built using React and deployed on AWS with HTTPS security.`}
+              image={ReactP}
             />
           </a>
         </div>

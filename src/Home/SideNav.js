@@ -19,6 +19,7 @@ const SideNav = () => {
         <li className="sideNavLi">RailsSake</li>
         <li className="sideNavLi">Dunjean Together</li>
         <li className="sideNavLi">Guided Escape</li>
+        <li className="sideNavLi">My New React Project </li>
       </ul>
     </div>
   );

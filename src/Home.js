@@ -19,51 +19,10 @@ const Home = () => {
   const [projects, setProjects] = useState(false);
   const [blog, setBlog] = useState(false);
   const [music, setMusic] = useState(false);
-  const [sidenav, setSidenav] = useState(false);
-  useEffect(() => {
-    document.body.addEventListener("click", (e) => {
-      if (e.target.contains(ref.current)) {
-        setSidenav(false);
-      }
-    });
-  });
   return (
     <div className="w-[85%] h-[85%] bg-transparent text-white z-50 flex justify-between items-start">
       <div className="w-16 h-96 bg-transparent flex flex-col">
-        <div className="w-full h-20 bg-bodyColor rounded-3xl flex justify-center items-center cursor-pointer group">
-          <div
-            onClick={() => {
-              setSidenav(true);
-            }}
-            className="flex flex-col gap-1.5 overflow-hidden"
-          >
-            <span className="w-8 h-[2px] bg-textColor inline-block -translate-x-2 group-hover:translate-x-0 transition-transform duration-300 group-hover:bg-designColor"></span>
-            <span className="w-8 h-[2px] bg-textColor inline-block group-hover:bg-designColor duration-300"></span>
-            <span className="w-8 h-[2px] bg-textColor inline-block -translate-x-3.5 group-hover:translate-x-0 transition-transform duration-300 group-hover:bg-designColor"></span>
-          </div>
-        </div>
-        {sidenav && (
-          <div className="w-full h-screen fixed top-0 left-0 bg-black bg-opacity-50 z-50">
-            <div className="w-96 h-full relative">
-              <motion.div
-                ref={ref}
-                initial={{ x: -500, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className="w-full h-full bg-bodyColor overflow-y-scroll scrollbar-thin scrollbar-thumb-[#646464]"
-              >
-                <SideNav />
-                <span
-                  onClick={() => setSidenav(false)}
-                  className="absolute top-0 -right-16 w-12 h-12 bg-bodyColor text-2xl text-textColor hover:text-designColor duration-300 cursor-pointer flex items-center justify-center z-50"
-                >
-                  <MdOutlineClose />
-                </span>
-              </motion.div>
-            </div>
-          </div>
-        )}
-        <div className="w-full h-80 bg-bodyColor rounded-3xl py-6 flex flex-col items-center justify-between">
+        <div className="w-full h-80 bg-bodyColor rounded-md py-6 flex flex-col items-center justify-between">
           <span
             onClick={() => {
               setAbout(true);
@@ -90,7 +49,7 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <MdWork />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               Projects
             </span>
           </span>
@@ -105,7 +64,7 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <SiGooglechat />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               Blog
             </span>
           </span>
@@ -120,13 +79,13 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <a
-              href="https://www.youtube.com/watch?v=I3qwcxLIzvM"
+              href="https://www.youtube.com/watch?v=4cc1cZvFBzs"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaYoutube />
             </a>
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               Coding music
             </span>
           </span>
@@ -141,7 +100,7 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <PiReadCvLogo />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               Resume
             </span>
           </span>
