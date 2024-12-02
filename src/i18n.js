@@ -20,9 +20,7 @@ i18next
           Residence: "Residence:",
           ResidenceLocation: "Japan",
           Address: "Address:",
-          AddressLocation: "Tokyo",
-          AvailableForWork: "Available for work:",
-          WorkAvailability: "yes",
+          AddressLocation: "Yokohama",
           HighestGithubCommit: "Highest Team Github Commit Bootcamp Award",
           CodingHours: "140 hours average coding per month",
           BestTagineCook: "Best Tagine Cook in Town",
@@ -129,13 +127,11 @@ i18next
         translation: {
           SelfIntroHeader: "はじめまして、アリです。",
           SelfIntro:
-            "フルスタックデベロッパー兼コンサルタントです。ゼロからWebアプリケーションを作ることに情熱を持っています。<br /> 私の使命は、シームレスで効率的かつユーザーフレンドリーな体験を提供することです。フロントエンドの見た目もバックエンドの機能も、すべてが調和して素晴らしく動作するようにします。",
+            "フルスタックデベロッパーとコンサルタントをしています。ゼロからWebアプリを作るのが大好きです。 目標は、シームレスで使いやすいアプリを提供すること。フロントエンドからバックエンドまで、全てがうまく動くように心がけています",
           Residence: "居住地:",
           ResidenceLocation: "日本",
           Address: "住所:",
-          AddressLocation: "東京",
-          AvailableForWork: "仕事の可用性:",
-          WorkAvailability: "はい",
+          AddressLocation: "横浜",
           HighestGithubCommit: "最高のチームGithubコミットブートキャンプ賞",
           CodingHours: "1ヶ月に平均140時間のコーディング",
           BestTagineCook: "街で一番のタジン料理の名手",
@@ -153,17 +149,17 @@ i18next
           ScrumDesc: "アジャイル開発を促進し、チームの効率を確保します。",
           AboutTitle: "私",
           MeTitle: "について",
-          FunTitle: "楽しい",
-          FactTitle: "事実",
+          FunTitle: "豆",
+          FactTitle: "知識",
           MyTitle: "私の",
           ExpertiseTitle: "専門分野",
-          RecentTitle: "最近",
+          RecentTitle: "最近の",
           ProjectsTitle: "プロジェクト",
           ShoppiSheepTitle: "ショッピーシープ",
           ShoppiSheepCategory: "RailsベースのECサイト",
           RailsSakeTitle: "Rails酒",
-          RailsSakeCategory: "日本の酒の場所を探る",
-          GuidedEscapeTitle: "ガイド付き脱出",
+          RailsSakeCategory: "日本の酒の場所を探す",
+          GuidedEscapeTitle: "ガイデッド エスケープ",
           GuidedEscapeCategory: "RailsベースのAirbnb体験クローン",
           LemonadeStandTitle: "レモネードスタンド",
           LemonadeStandCategory:
@@ -221,7 +217,7 @@ i18next
           <strong>集中コーディングブートキャンプ:</strong> モダンなWeb開発技術を習得。
           </p>`,
           WuppertalDesc: `<p>
-          <strong>統計/ 計量経済学/ コントローリング/ 監査。
+          <strong>統計/ 計量経済学。
           </p>`,
           RakutenConsultantTitle:
             "グローバルテクノロジー人材採用コンサルタント",

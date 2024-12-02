@@ -35,13 +35,7 @@ const AboutMe = () => {
               <span className="aboutRightLiSpan">
                 <Trans i18nKey="Address">Address:</Trans>
               </span>
-              <Trans i18nKey="AddressLocation">Tokyo</Trans>
-            </li>
-            <li className="aboutRightLi">
-              <span className="aboutRightLiSpan">
-                <Trans i18nKey="AvailableForWork">Available for work:</Trans>
-              </span>
-              <Trans i18nKey="WorkAvailability">yes</Trans>
+              <Trans i18nKey="AddressLocation">Yokohama</Trans>
             </li>
           </ul>
         </div>
