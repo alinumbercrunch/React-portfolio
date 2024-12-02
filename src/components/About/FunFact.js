@@ -4,20 +4,35 @@ import { FaTrophy } from "react-icons/fa";
 import { BiCodeCurly } from "react-icons/bi";
 import { MdFoodBank } from "react-icons/md";
 import { MdPets } from "react-icons/md";
+import { Trans } from "react-i18next";
 
 const FunFact = () => {
   return (
     <div className="px-0 grid grid-cols-4 pb-10">
       <FunCard
         icon={<FaTrophy />}
-        des="Hightest Team Github Commit Bootcamp Award"
+        des={
+          <Trans i18nKey="HighestGithubCommit">
+            Highest Team Github Commit Bootcamp Award
+          </Trans>
+        }
       />
       <FunCard
         icon={<BiCodeCurly />}
-        des="140 hours average coding per month"
+        des={
+          <Trans i18nKey="CodingHours">
+            140 hours average coding per month
+          </Trans>
+        }
       />
-      <FunCard icon={<MdFoodBank />} des="Best Tagine Cook in Town" />
-      <FunCard icon={<MdPets />} des="Owner of 7 family cats" />
+      <FunCard
+        icon={<MdFoodBank />}
+        des={<Trans i18nKey="BestTagineCook">Best Tagine Cook in Town</Trans>}
+      />
+      <FunCard
+        icon={<MdPets />}
+        des={<Trans i18nKey="FamilyCats">Owner of 7 family cats</Trans>}
+      />
     </div>
   );
 };

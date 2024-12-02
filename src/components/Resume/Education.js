@@ -3,67 +3,82 @@ import ResumeTitle from "./ResumeTitle";
 import { MdWork } from "react-icons/md";
 import ResumeCard from "./ResumeCard";
 import { GiGraduateCap } from "react-icons/gi";
+import { Trans, useTranslation } from "react-i18next";
 
 const Education = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="w-full grid grid-cols-9 px-6">
       <div className="col-span-4">
-        <ResumeTitle title="Experience" icon={<MdWork />} />
+        <ResumeTitle
+          title={<Trans i18nKey="ExperienceTitle">Experience</Trans>}
+          icon={<MdWork />}
+        />
 
         <ResumeCard
           badge=""
-          title="Career Break: Software Engineer Transition"
-          subTitle="LeWagon Web Development Bootcamp Tokyo"
-          des={`<p>
-            <strong>Intensive Coding Bootcamp:</strong> Completed a rigorous program, mastering modern Full Stack Web development technologies including Ruby on Rails, HTML5, CSS, JavaScript, PostgreSQL, and React.<br /><br />
-            <strong>Project Engagement:</strong> Currently involved in 3 private projects and expanding my portfolio.
-          </p>`}
+          title={
+            <Trans i18nKey="CareerBreakTitle">
+              Career Break: Software Engineer Transition
+            </Trans>
+          }
+          subTitle={
+            <Trans i18nKey="LeWagonBootcampTitle">
+              LeWagon Web Development Bootcamp Tokyo
+            </Trans>
+          }
+          des={t("LeWagonBootcampDesc")}
         />
 
         <ResumeCard
           badge="Apr 2022-May 2024"
-          title="Global Tech Talent Acquisition Consultant"
-          subTitle="Rakuten Inc. Japan (Via Boyd & Moore Executive Search)"
-          des={`<p>
-            <strong>Stakeholder Management:</strong><br />
-            Led cross-functional collaboration with HR and Tech teams in Japan and India.<br /><br />
-            <strong>Project Oversight:</strong><br />
-            Managed recruitment projects across 4 departments, handling 15-20 positions and over 30 headcounts.<br /><br />
-            <strong>Strategic Planning:</strong><br />
-            Developed and executed hiring strategies for mid-level and senior technical roles, focusing on Japanese and global markets.
-          </p>`}
+          title={
+            <Trans i18nKey="RakutenConsultantTitle">
+              Global Tech Talent Acquisition Consultant
+            </Trans>
+          }
+          subTitle={
+            <Trans i18nKey="RakutenConsultantSubTitle">
+              Rakuten Inc. Japan (Via Boyd & Moore Executive Search)
+            </Trans>
+          }
+          des={t("RakutenConsultantDesc")}
         />
 
         <ResumeCard
           badge="Aug 2020 – Feb 2022"
-          title="Senior Account Executive"
-          subTitle="Spotted Recruit"
-          des={`<p>
-            <strong>Career Progression:</strong> Advanced from Account Executive to Senior Account Executive in December 2021, reflecting strong performance and leadership skills.<br /><br />
-            <strong>Client Account Management:</strong> Directed the end-to-end management of Rakuten accounts, overseeing recruitment projects for mid-to-senior engineering roles and ensuring successful candidate placements.<br /><br />
-            <strong>Team Leadership:</strong> Guided and mentored junior team members, focusing on enhancing their recruitment strategies, stakeholder management, and business development skills.
-          </p>`}
+          title={
+            <Trans i18nKey="SpottedRecruitTitle">
+              Senior Account Executive
+            </Trans>
+          }
+          subTitle={
+            <Trans i18nKey="SpottedRecruitSubTitle">Spotted Recruit</Trans>
+          }
+          des={t("SpottedRecruitDesc")}
         />
 
         <ResumeCard
           badge="Nov 2018 – July 2020"
-          title="Technical Recruiter"
-          subTitle="Robert Walters Japan"
-          des={`<p>
-            <strong>Sector Specialization:</strong> Led talent acquisition projects focused on the insurance, InsurTech, and FinTech sectors, ensuring the alignment of candidate profiles with client needs.<br /><br />
-            <strong>Full-Cycle Recruitment Management:</strong> Directed the entire recruitment lifecycle, offering tailored consultancy to both candidates and clients to achieve optimal placement outcomes.<br /><br />
-            <strong>Business Development:</strong> Executed English-speaking business development initiatives within Japan’s financial industry, expanding the client base and securing new opportunities.
-          </p>`}
+          title={
+            <Trans i18nKey="RobertWaltersTitle">Technical Recruiter</Trans>
+          }
+          subTitle={
+            <Trans i18nKey="RobertWaltersSubTitle">Robert Walters Japan</Trans>
+          }
+          des={t("RobertWaltersDesc")}
         />
 
         <ResumeCard
           badge="Oct 2016 - Oct 2018"
-          title="Business Coach"
-          subTitle="Berlitz Business Communication Japan"
-          des={`<p>
-            <strong>Program Leadership:</strong> Designed and delivered cultural and language coaching programs in French, German, and Arabic for Japanese employees at major corporations.<br /><br />
-            <strong>Executive Coaching:</strong> Successfully trained and coached C-level executives and senior management in Japanese and multinational companies, driving cross-cultural communication and leadership development.
-          </p>`}
+          title={<Trans i18nKey="BerlitzTitle">Business Coach</Trans>}
+          subTitle={
+            <Trans i18nKey="BerlitzSubTitle">
+              Berlitz Business Communication Japan
+            </Trans>
+          }
+          des={t("BerlitzDesc")}
         />
       </div>
       <div className="w-full h-full flex justify-center items-center">
@@ -71,22 +86,33 @@ const Education = () => {
       </div>
 
       <div className="col-span-4">
-        <ResumeTitle title="Education" icon={<GiGraduateCap />} />
+        <ResumeTitle
+          title={<Trans i18nKey="EducationTitle">Education</Trans>}
+          icon={<GiGraduateCap />}
+        />
         <ResumeCard
           badge="June 2024 - Sep 2024"
-          title="Full Stack Development Graduate"
-          subTitle="LeWagon Tokyo"
-          des={`<p>
-            <strong>Intensive coding bootcamp, acquiring modern web development technologies.
-          </p>`}
+          title={
+            <Trans i18nKey="LeWagonGraduateTitle">
+              Full Stack Development Graduate
+            </Trans>
+          }
+          subTitle={
+            <Trans i18nKey="LeWagonGraduateSubTitle">LeWagon Tokyo</Trans>
+          }
+          des={t("LeWagonGraduateDesc")}
         />
         <ResumeCard
           badge="Oct 2008 - May 2016"
-          title="Bachelor and Master of Science"
-          subTitle="University of Wuppertal"
-          des={`<p>
-            <strong>Statistic/ Econometrics/ Controlling/Auditing.
-          </p>`}
+          title={
+            <Trans i18nKey="WuppertalTitle">
+              Bachelor and Master of Science
+            </Trans>
+          }
+          subTitle={
+            <Trans i18nKey="WuppertalSubTitle">University of Wuppertal</Trans>
+          }
+          des={t("WuppertalDesc")}
         />
       </div>
     </div>

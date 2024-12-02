@@ -7,11 +7,15 @@ import dun from "../../assets/Dun.png";
 import ProjectCard from "./ProjectCard";
 import Title from "../About/Title";
 import ReactP from "../../assets/ReactP.png";
+import { Trans } from "react-i18next";
 
 const Project = () => {
   return (
     <div>
-      <Title title="Recent" subTitle="Projects" />
+      <Title
+        title={<Trans i18nKey="RecentTitle">Recent</Trans>}
+        subTitle={<Trans i18nKey="ProjectsTitle">Projects</Trans>}
+      />
       <div className="w-full grid grid-cols-2 gap-10">
         <div className="px-6 justify-center items-center">
           <a
@@ -20,8 +24,12 @@ const Project = () => {
             rel="noopener noreferrer"
           >
             <ProjectCard
-              title="ShoppiSheep"
-              category="Rails based EC-Website"
+              title={<Trans i18nKey="ShoppiSheepTitle">ShoppiSheep</Trans>}
+              category={
+                <Trans i18nKey="ShoppiSheepCategory">
+                  Rails based EC-Website
+                </Trans>
+              }
               image={ShoppiSheep}
             />
           </a>
@@ -31,8 +39,12 @@ const Project = () => {
             rel="noopener noreferrer"
           >
             <ProjectCard
-              title="RailsSake"
-              category="Explore Sake locations in Japan"
+              title={<Trans i18nKey="RailsSakeTitle">RailsSake</Trans>}
+              category={
+                <Trans i18nKey="RailsSakeCategory">
+                  Explore Sake locations in Japan
+                </Trans>
+              }
               image={RailsSake}
             />
           </a>
@@ -42,8 +54,12 @@ const Project = () => {
             rel="noopener noreferrer"
           >
             <ProjectCard
-              title="Guided escape"
-              category="Rails based Airbnb Experiences clone"
+              title={<Trans i18nKey="GuidedEscapeTitle">Guided Escape</Trans>}
+              category={
+                <Trans i18nKey="GuidedEscapeCategory">
+                  Rails based Airbnb Experiences clone
+                </Trans>
+              }
               image={Guided}
             />
           </a>
@@ -55,8 +71,12 @@ const Project = () => {
             rel="noopener noreferrer"
           >
             <ProjectCard
-              title="Lemonade Stand"
-              category="Point-of-Sale System for Vendors in Flea/Craft Markets"
+              title={<Trans i18nKey="LemonadeStandTitle">Lemonade Stand</Trans>}
+              category={
+                <Trans i18nKey="LemonadeStandCategory">
+                  Point-of-Sale System for Vendors in Flea/Craft Markets
+                </Trans>
+              }
               image={Lemonade}
             />
           </a>
@@ -66,12 +86,15 @@ const Project = () => {
             rel="noopener noreferrer"
           >
             <ProjectCard
-              title="Dunjean Together"
-              category={`Multiplayer Dungeon Game
-                TypeScript
-                WebGL
-                Vue
-                Mobile Support`}
+              title={
+                <Trans i18nKey="DunjeanTogetherTitle">Dunjean Together</Trans>
+              }
+              category={
+                <Trans i18nKey="DunjeanTogetherCategory">
+                  Multiplayer Dungeon Game, TypeScript, WebGL, Vue, Mobile
+                  Support
+                </Trans>
+              }
               image={dun}
             />
           </a>
@@ -81,8 +104,17 @@ const Project = () => {
             rel="noopener noreferrer"
           >
             <ProjectCard
-              title="My New React Portfolio"
-              category={`A personal portfolio website built using React and deployed on AWS with HTTPS security.`}
+              title={
+                <Trans i18nKey="ReactPortfolioTitle">
+                  My New React Portfolio
+                </Trans>
+              }
+              category={
+                <Trans i18nKey="ReactPortfolioCategory">
+                  A personal portfolio website built using React and deployed on
+                  AWS with HTTPS security.
+                </Trans>
+              }
               image={ReactP}
             />
           </a>

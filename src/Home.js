@@ -11,6 +11,7 @@ import Projects from "./components/Projects/Project.js";
 import { motion } from "framer-motion";
 import Blog from "./components/Blog/Blog.js";
 import SideNav from "./Home/SideNav.js";
+import { Trans } from "react-i18next";
 
 const Home = () => {
   const ref = useRef();
@@ -19,6 +20,7 @@ const Home = () => {
   const [projects, setProjects] = useState(false);
   const [blog, setBlog] = useState(false);
   const [music, setMusic] = useState(false);
+
   return (
     <div className="w-[85%] h-[85%] bg-transparent text-white z-50 flex justify-between items-start">
       <div className="w-16 h-96 bg-transparent flex flex-col">
@@ -35,7 +37,7 @@ const Home = () => {
           >
             <FaUser />
             <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
-              About
+              <Trans i18nKey="About">About</Trans>
             </span>
           </span>
           <span
@@ -50,7 +52,7 @@ const Home = () => {
           >
             <MdWork />
             <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
-              Projects
+              <Trans i18nKey="Projects">Projects</Trans>
             </span>
           </span>
           <span
@@ -65,7 +67,7 @@ const Home = () => {
           >
             <SiGooglechat />
             <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
-              Blog
+              <Trans i18nKey="Blog">Blog</Trans>
             </span>
           </span>
           <span
@@ -86,7 +88,7 @@ const Home = () => {
               <FaYoutube />
             </a>
             <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
-              Coding music
+              <Trans i18nKey="CodingMusic">Coding Music</Trans>
             </span>
           </span>
           <span
@@ -101,7 +103,7 @@ const Home = () => {
           >
             <PiReadCvLogo />
             <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
-              Resume
+              <Trans i18nKey="Resume">Resume</Trans>
             </span>
           </span>
         </div>
