@@ -72,7 +72,7 @@ const Left = () => {
                     key={lng}
                     onClick={() => i18next.changeLanguage(lng)}
                     disabled={i18next.language === lng}
-                    className="px-3 py-1 border rounded text-gray-600 hover:text-designColor transition-colors"
+                    className="px-3 py-1 border rounded-sm text-gray-600 hover:text-designColor transition-colors"
                   >
                     {" "}
                     {lngs[lng].nativeName}{" "}

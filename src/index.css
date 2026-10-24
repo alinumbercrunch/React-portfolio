@@ -1,34 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer components {
-  .borderTop {
-    @apply border-t-[1px] border-t-zinc-800;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap')
+layer(base);
+@import 'tailwindcss';
 
-  .borderBottom {
-    @apply border-b-[1px] border-b-zinc-800;
-  }
+@plugin 'tailwind-scrollbar';
 
-  .borderRight {
-    @apply border-r-[1px] border-r-zinc-800;
-  }
+@theme {
+  --font-bodyfont: Poppins, sans-serif;
+  --font-titleFont: Montserrat, sans-serif;
 
-  .borderLeft {
-    @apply border-L-[1px] border-L-zinc-800;
-  }
+  --color-bodyColor: #191919;
+  --color-textColor: rgba(255, 255, 255, 0.85);
+  --color-designColor: #800080;
+  --color-titleRoundBg: linear-gradient(
+    135deg,
+    rgba(120, 204, 109, 0.15) 0%,
+    rgba(120, 204, 109, 1%)
+  );
 
-  .borderAll {
-    @apply border-[1px] border-zinc-800;
+  --animate-spin-slow: spin 15s linear infinite;
+  --animate-reverse-spin: reverse-spin 15s linear infinite;
+
+  --shadow-greenShadow: 0px 0px 188px -14px rgba(237, 255, 32, 1);
+  --shadow-testShadow: 11px 0px 13px -15px rgba(0, 0, 0, 1);
+
+  @keyframes reverse-spin {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
   }
-  .aboutRightLi {
-    @apply font-semibold text-zinc-400 text-base flex justify-between items-center border-b-[1px] border-gray-800 py-2;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
-  .aboutRightLiSpan {
-    @apply font-semibold  bg-designColor text-gray-300 uppercase px-4 py-[1px] rounded-md;
-  }
-  .sideNavLi {
-    @apply text-textColor border-b-[1px] border-b-zinc-500 py-4 text-base hover:text-designColor duration-300;
-  }
+}
+
+@utility borderTop {
+  @apply border-t border-t-zinc-800;
+}
+
+@utility borderBottom {
+  @apply border-b border-b-zinc-800;
+}
+
+@utility borderRight {
+  @apply border-r border-r-zinc-800;
+}
+
+@utility borderAll {
+  @apply border border-zinc-800;
+}
+
+@utility aboutRightLi {
+  @apply font-semibold text-zinc-400 text-base flex justify-between items-center border-b border-gray-800 py-2;
+}
+
+@utility aboutRightLiSpan {
+  @apply font-semibold  bg-designColor text-gray-300 uppercase px-4 py-px rounded-md;
+}
+
+@utility sideNavLi {
+  @apply text-textColor border-b border-b-zinc-500 py-4 text-base hover:text-designColor duration-300;
 }

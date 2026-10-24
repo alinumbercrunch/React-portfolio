@@ -65,7 +65,7 @@ const Skills = ({ title, icon }) => {
         </div>
       </div>
       <div className="w-full h-full flex justify-center items-center">
-        <span className="w-[1px] h-full bg-zinc-800 inline-flex "></span>
+        <span className="w-px h-full bg-zinc-800 inline-flex "></span>
       </div>
       <div className="col-span-4">
         <ResumeTitle
@@ -73,31 +73,31 @@ const Skills = ({ title, icon }) => {
           icon={<IoLanguageSharp />}
         />
         <div className="py-4">
-          <div className="py-3 border-b-[1px] border-zinc-800">
+          <div className="py-3 border-b border-zinc-800">
             <p className="text-base text-textcolor -mb-1.5">
               <Trans i18nKey="French">French</Trans>
             </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
-              <span className="w-[100%] h-full absolute top-0 left-0 bg-designColor"></span>
+              <span className="w-full h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
-          <div className="py-3 border-b-[1px] border-zinc-800">
+          <div className="py-3 border-b border-zinc-800">
             <p className="text-base text-textcolor -mb-1.5">
               <Trans i18nKey="German">German</Trans>
             </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
-              <span className="w-[100%] h-full absolute top-0 left-0 bg-designColor"></span>
+              <span className="w-full h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
-          <div className="py-3 border-b-[1px] border-zinc-800">
+          <div className="py-3 border-b border-zinc-800">
             <p className="text-base text-textcolor -mb-1.5">
               <Trans i18nKey="Arabic">Arabic</Trans>
             </p>
             <span className="w-full bg-zinc-600 h-1 inline-flex relative">
-              <span className="w-[100%] h-full absolute top-0 left-0 bg-designColor"></span>
+              <span className="w-full h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
-          <div className="py-3 border-b-[1px] border-zinc-800">
+          <div className="py-3 border-b border-zinc-800">
             <p className="text-base text-textcolor -mb-1.5">
               <Trans i18nKey="Japanese">Japanese</Trans>
             </p>
@@ -105,7 +105,7 @@ const Skills = ({ title, icon }) => {
               <span className="w-[75%] h-full absolute top-0 left-0 bg-designColor"></span>
             </span>
           </div>
-          <div className="py-3 border-b-[1px] border-zinc-800">
+          <div className="py-3 border-b border-zinc-800">
             <p className="text-base text-textcolor -mb-1.5">
               <Trans i18nKey="English">English</Trans>
             </p>

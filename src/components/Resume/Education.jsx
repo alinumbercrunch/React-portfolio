@@ -82,7 +82,7 @@ const Education = () => {
         />
       </div>
       <div className="w-full h-full flex justify-center items-center">
-        <span className="w-[1px] h-full bg-zinc-800 inline-flex"></span>
+        <span className="w-px h-full bg-zinc-800 inline-flex"></span>
       </div>
 
       <div className="col-span-4">

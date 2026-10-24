@@ -1,16 +1,16 @@
 import React, { useEffect, useRef, useState } from "react";
 import Left from "./Home/Left";
-import About from "./components/About/About.js";
+import About from "./components/About/About.jsx";
 import { FaUser } from "react-icons/fa";
 import { MdOutlineClose, MdWork } from "react-icons/md";
 import { SiGooglechat } from "react-icons/si";
 import { PiReadCvLogo } from "react-icons/pi";
 import { FaYoutube } from "react-icons/fa";
-import Resume from "./components/Resume/Resume.js";
-import Projects from "./components/Projects/Project.js";
+import Resume from "./components/Resume/Resume.jsx";
+import Projects from "./components/Projects/Project.jsx";
 import { motion } from "framer-motion";
-import Blog from "./components/Blog/Blog.js";
-import SideNav from "./Home/SideNav.js";
+import Blog from "./components/Blog/Blog.jsx";
+import SideNav from "./Home/SideNav.jsx";
 import { Trans } from "react-i18next";
 
 const Home = () => {
@@ -36,7 +36,7 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <FaUser />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-px rounded-xl left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               <Trans i18nKey="About">About</Trans>
             </span>
           </span>
@@ -51,7 +51,7 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <MdWork />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-px rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               <Trans i18nKey="Projects">Projects</Trans>
             </span>
           </span>
@@ -66,7 +66,7 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <SiGooglechat />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-px rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               <Trans i18nKey="Blog">Blog</Trans>
             </span>
           </span>
@@ -87,7 +87,7 @@ const Home = () => {
             >
               <FaYoutube />
             </a>
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-px rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               <Trans i18nKey="CodingMusic">Coding Music</Trans>
             </span>
           </span>
@@ -102,7 +102,7 @@ const Home = () => {
             className="w-full h-6 text-textColor text-xl flex items-center justify-center hover:text-designColor duration-300 cursor-pointer relative group"
           >
             <PiReadCvLogo />
-            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-[1px] rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
+            <span className="absolute text-black font-semibold text-sm uppercase bg-designColor px-4 py-px rounded-md left-0 translate-x-8 group-hover:translate-x-12 transition-all duration-300 z-200 opacity-0 group-hover:opacity-100">
               <Trans i18nKey="Resume">Resume</Trans>
             </span>
           </span>
